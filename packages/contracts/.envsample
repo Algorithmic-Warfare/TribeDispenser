@@ -1,33 +1,15 @@
 # This .env file is for demonstration purposes only.
 #
 # This should usually be excluded via .gitignore and the env vars attached to
-# your deployment enviroment, but we're including this here for ease of local
+# your deployment environment, but we're including this here for ease of local
 # development. Please do not commit changes to this file!
 #
 # Enable debug logs for MUD CLI
 DEBUG=mud:*
 #
-# Anvil default private key:
-#Deployer 
-PRIVATE_KEY=0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
-WORLD_ADDRESS=0x8a791620dd6260079bf849dc5567adc3f2fdc318
 
-#Player interacting with the SSU
-PLAYER_PRIVATE_KEY=0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d
+PRIVATE_KEY= # Put your private key here ...
+WORLD_ADDRESS=0x9891ee4bf5f2a9e74e9d81b06b855eec70b78d4f # Stillness World Address
 
-#Local RPC
-RPC_URL="http://127.0.0.1:8545"
-CHAIN_ID=31337
-
-#SMART STORAGE UNIT ID
-#Copy this info from the in-game Smart Storage Unit
-SSU_ID=79892758192845148800129119135431091549314308412206225704423631601341662419562
-
-ITEM_1=100000002
-ITEM_2=100000003
-ITEM_3=100000003
-
-# TESTING CONFIG
-# This is the private key for tests / the execute script.
-TEST_TRIBESMEN_PRIVATE_KEY=0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
-TEST_NONTRIBESMEN_PRIVATE_KEY=0x45ab544e419c970f86cc10138a18055e8790c1e5365ab220c40189a28b307485
+RPC_URL="https://pyrope-external-rpc.live.tech.evefrontier.com" # Stillness RPC 
+CHAIN_ID=695569 # Pyrope Chain ID

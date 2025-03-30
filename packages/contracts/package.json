@@ -9,6 +9,7 @@
     "deploy:local": "pnpm run build && mud deploy --profile=local --worldAddress ${WORLD_ADDRESS:-$1}",
     "deploy:garnet": "pnpm run build && mud deploy --profile=garnet --worldAddress 0x7fe660995b0c59b6975d5d59973e2668af6bb9c5",
     "deploy:redstone": "pnpm run build && mud deploy --profile=redstone --worldAddress ${WORLD_ADDRESS:-$1}",
+    "deploy:pyrope": "pnpm run build && mud deploy --profile=pyrope --worldAddress 0x9891ee4bf5f2a9e74e9d81b06b855eec70b78d4f",
     "dev": "pnpm mud dev-contracts",
     "lint": "pnpm run prettier && pnpm run solhint",
     "prettier": "prettier --write 'src/**/*.sol'",
