@@ -1,0 +1,22 @@
+{
+  "systems": [
+    {
+      "namespaceLabel": "AWAR",
+      "label": "TribeStorageSystem",
+      "namespace": "AWAR",
+      "name": "TribeStorage",
+      "systemId": "0x73794157415200000000000000000000547269626553746f7261676500000000",
+      "abi": [
+        "function deposit(uint256 smartStorageUnitId, uint256[] ephemeralInventoryItemIds)",
+        "function ping(string pingText)",
+        "function withdraw(uint256 smartStorageUnitId, uint256 inventoryItemId, uint256 inventoryItemAmount)"
+      ],
+      "worldAbi": [
+        "function AWAR__deposit(uint256 smartStorageUnitId, uint256[] ephemeralInventoryItemIds)",
+        "function AWAR__ping(string pingText)",
+        "function AWAR__withdraw(uint256 smartStorageUnitId, uint256 inventoryItemId, uint256 inventoryItemAmount)"
+      ]
+    }
+  ],
+  "createdAt": 1734356071166
+}
