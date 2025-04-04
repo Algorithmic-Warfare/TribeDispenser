@@ -114,6 +114,7 @@ contract TribeDispenserSystem is TribeStorageSystem {
       });
 
       TribePackageEntries.set(entryId, packageEntryData);
+      entryIds[i] = entryId;
     }
     // Step 2. register the id, name, and list of packageEntryId in the TribePackage table
     TribePackageData memory packageData = TribePackageData({

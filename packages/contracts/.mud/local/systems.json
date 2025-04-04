@@ -2,21 +2,48 @@
   "systems": [
     {
       "namespaceLabel": "AWAR",
+      "label": "TribeDispenserSystem",
+      "namespace": "AWAR",
+      "name": "TribeDispenser",
+      "systemId": "0x73794157415200000000000000000000547269626544697370656e7365720000",
+      "abi": [
+        "function deposit(uint256 smartStorageUnitId, uint256 inventoryItemId, uint256 inventoryItemAmount)",
+        "function depositAll(uint256 smartStorageUnitId, uint256[] ephemeralInventoryItemIds)",
+        "function dispensePackageMaterials(uint256 smartStorageUnitId, uint256 packageId, uint256 quantity)",
+        "function getPackage(uint256 packageId) view returns (((uint256 itemId, uint256 quantity)[] entries))",
+        "function registerPackage(uint256 smartStorageUnitId, string packageName, ((uint256 itemId, uint256 quantity)[] entries) package)",
+        "function renamePackage(uint256 packageId, string newPackageName)",
+        "function unregisterPackage(uint256 packageId)",
+        "function withdraw(uint256 smartStorageUnitId, uint256 inventoryItemId, uint256 inventoryItemAmount)"
+      ],
+      "worldAbi": [
+        "function AWAR__deposit(uint256 smartStorageUnitId, uint256 inventoryItemId, uint256 inventoryItemAmount)",
+        "function AWAR__depositAll(uint256 smartStorageUnitId, uint256[] ephemeralInventoryItemIds)",
+        "function AWAR__dispensePackageMaterials(uint256 smartStorageUnitId, uint256 packageId, uint256 quantity)",
+        "function AWAR__getPackage(uint256 packageId) view returns (((uint256 itemId, uint256 quantity)[] entries))",
+        "function AWAR__registerPackage(uint256 smartStorageUnitId, string packageName, ((uint256 itemId, uint256 quantity)[] entries) package)",
+        "function AWAR__renamePackage(uint256 packageId, string newPackageName)",
+        "function AWAR__unregisterPackage(uint256 packageId)",
+        "function AWAR__withdraw(uint256 smartStorageUnitId, uint256 inventoryItemId, uint256 inventoryItemAmount)"
+      ]
+    },
+    {
+      "namespaceLabel": "AWAR",
       "label": "TribeStorageSystem",
       "namespace": "AWAR",
       "name": "TribeStorage",
       "systemId": "0x73794157415200000000000000000000547269626553746f7261676500000000",
       "abi": [
-        "function deposit(uint256 smartStorageUnitId, uint256[] ephemeralInventoryItemIds)",
-        "function ping(string pingText)",
+        "function deposit(uint256 smartStorageUnitId, uint256 inventoryItemId, uint256 inventoryItemAmount)",
+        "function depositAll(uint256 smartStorageUnitId, uint256[] ephemeralInventoryItemIds)",
         "function withdraw(uint256 smartStorageUnitId, uint256 inventoryItemId, uint256 inventoryItemAmount)"
       ],
       "worldAbi": [
-        "function AWAR__deposit(uint256 smartStorageUnitId, uint256[] ephemeralInventoryItemIds)",
-        "function AWAR__ping(string pingText)",
+        "function AWAR__deposit(uint256 smartStorageUnitId, uint256 inventoryItemId, uint256 inventoryItemAmount)",
+        "function AWAR__depositAll(uint256 smartStorageUnitId, uint256[] ephemeralInventoryItemIds)",
         "function AWAR__withdraw(uint256 smartStorageUnitId, uint256 inventoryItemId, uint256 inventoryItemAmount)"
       ]
     }
   ],
-  "createdAt": 1734356071166
+  "createdAt": 1743616696902
 }

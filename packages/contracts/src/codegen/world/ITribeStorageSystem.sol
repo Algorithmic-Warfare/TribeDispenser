@@ -9,9 +9,9 @@ pragma solidity >=0.8.24;
  * @dev This interface is automatically generated from the corresponding system contract. Do not edit manually.
  */
 interface ITribeStorageSystem {
-  function AWAR__ping(string memory pingText) external;
+  function AWAR__depositAll(uint256 smartStorageUnitId, uint256[] memory ephemeralInventoryItemIds) external;
 
-  function AWAR__deposit(uint256 smartStorageUnitId, uint256[] memory ephemeralInventoryItemIds) external;
+  function AWAR__deposit(uint256 smartStorageUnitId, uint256 inventoryItemId, uint256 inventoryItemAmount) external;
 
   function AWAR__withdraw(uint256 smartStorageUnitId, uint256 inventoryItemId, uint256 inventoryItemAmount) external;
 }

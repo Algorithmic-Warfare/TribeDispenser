@@ -25,10 +25,15 @@ contract PostDeploy is Script {
     vm.startBroadcast(deployerPrivateKey);
 
     world = IWorld(worldAddress);
-    ResourceId systemId = Utils.smartStorageUnitSystemId();
+    ResourceId tribeDispenserSystemId = Utils.tribeDispenserSystemId();
 
-    console.log("[SYSTEM] TribeStorageSystem ResourceId: ");
-    console.logBytes32(systemId.unwrap());
+    console.log("[SYSTEM] TribeDispenser ResourceId: ");
+    console.logBytes32(tribeDispenserSystemId.unwrap());
+
+    ResourceId tribeStorageSystemId = Utils.tribeStorageSystemId();
+
+    console.log("[SYSTEM] TribeStorage ResourceId: ");
+    console.logBytes32(tribeStorageSystemId.unwrap());
 
     vm.stopBroadcast();
   }
